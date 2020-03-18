@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="form-style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1 id="title">Programmer's Survey Form</h1>
+			<p id="description">Thank you for taking the time to let us know the best coding platform in 2020</p>
+		</div>
+		<form id="survey-form">
+			<div id="form-group">
+				<label id="name-lable" for="name">Name</label>
+				<input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+			</div>
+			<div id="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
+			</div>
+			<div id="form-group">
+				<label id="number-label" for="number">Age<span class="clue">(optional)</span></label
+	      ></label>
+	      <input id="number" type="number" name="age" min=10 max=99 class="form-control" placeholder="Age">
+			</div>
+			<div class="form-group">
+				<p>Which option best describe your current role?</p>
+				<select id="dropdown" name="role" class="form-control" required>
+					<option disabled selected value>Select current role</option>
+					<option value="student">Student</option>
+					<option value="job-part-time">Part Time Job</option>
+			        <option value="job-full-time">Full Time Job</option>
+			        <option value="prefernot">Prefer not to say</option>
+			        <option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Which is your favorite online coding platform?</p>
+				<select id="most-like" name="most-like" class="form-control" required>
+					<option disabled selected value>Select an option</option>
+					<option value="codechef">Codechef</option>
+			        <option value="hackerearth">HackerEarth</option>
+			        <option value="leetcode">Leetcode</option>
+			        <option value="topcoder">TopCoder</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Would you recommend your favorite platform to a friend?</p>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="definitely" checked>Definitely</label>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="maybe">May be</label>
+				<label><input type="radio" name="user-recommend" class="input-radio" value="not-sure">Not sure</label>
+			</div>
+			<div class="form-group">
+				<p>What do you like most about your favorite platform?<span class="clue">(Check all that apply)</span></p>
+				<label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+				<label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
+				<label><input name="prefer" value="video-tutorial" type="checkbox" class="input-checkbox">Video Tutorials</label>
+				<label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+				<label><input name="prefer" value="open-source" type="checkbox" class="input-checkbox">Open Source</label>
+				<label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum</label>
+			</div>
+			<div class="form-group">
+				<p>Any comment or suggestions?</p>
+				<textarea id="comment" class="inpur-textarea" placeholder="Enter you suggestions here.."></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
