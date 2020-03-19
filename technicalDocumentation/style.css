@@ -1,0 +1,122 @@
+html,body{
+	min-width: 290px;
+	background-color: #ebebeb;
+	color: #4d4e53;
+	font-family: "Open Sans",Ariel, sans-serif;
+	line-height: 1.5;
+}
+
+#navbar{
+	position: fixed;
+	min-width: 290px;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	border-right: 2px ridge black;
+}
+
+header{
+	margin: 10px;
+	font-weight: thin;
+	color: #000;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+#main-doc header{
+	margin: 10px;
+	color: black;
+	font-size: 1.8rem;
+	font-weight: thin;
+	text-align: left;
+}
+
+#navbar header{
+	border-bottom: 1px solid black;
+}
+
+#navbar ul{
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 70%;
+}
+
+#navbar li{
+	color: #4d4e53;
+	border-bottom: 1px solid black;
+	list-style: none;
+	width: 100%;
+	position: relative;
+}
+
+#navbar a{
+	display: block;
+	color: #4d4e53;
+	padding: 10px 30px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#main-doc{
+	position: absolute;
+	margin-left: 310px;
+	padding: 20px;
+}
+
+section article{
+	margin: 15px;
+	color: #4d4e53;
+	font-size: 0.96rem;
+}
+
+section li{
+	margin: 15px 0 0 20px;
+}
+
+code{
+	display: block;
+	font-size: 0.9rem;
+	font-weight: thin;
+	margin: 10px;
+	padding: 15px;
+	color: #4d4e53;
+	background-color: #f2f2f2;
+	line-height: 1.8;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px){
+	#navbar ul{
+		border: 1px solid;
+		height: 200px;
+	}
+
+	#navbar{
+		position: absolute;
+		width: 100%;
+		max-height: 275px;
+		left: 0;
+		top: 0;
+		margin: 0;
+		z-index: 1;
+		border:none;
+		border-bottom: 2px solid;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
