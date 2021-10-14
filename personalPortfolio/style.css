@@ -40,6 +40,7 @@ body{
 	font-weight: 400;
 	line-height: 1.4;
 	color: #f0f0f0;
+	box-sizing border-box;
 }
 
 h1,h2{
@@ -47,15 +48,12 @@ h1,h2{
 	font-weight: 700;
 	text-align: center;
 }
-
 h1{
 	font-size: 6rem;
 }
-
 h2{
 	font-size: 4.2rem;
 }
-
 p{
 	font-size: 2rem;
 	font-family: Poppins,sans-sarif,
@@ -79,8 +77,6 @@ img{
 	display: block;
 	width: 100%;
 }
-
-
 
 #navbar{
 	display: flex;
@@ -110,8 +106,6 @@ img{
   }
 }
 
-
-
 #nav-list a{
 	display: block;
 	padding: 2px;
@@ -121,7 +115,6 @@ img{
 #nav-list a:hover{
 	background-color: #45567d;
 }
-
 
 .welcome-section{
 	display: flex;
